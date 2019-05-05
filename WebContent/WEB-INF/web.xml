@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JkeWeb</display-name>
+  <servlet>
+    <servlet-name>UserResource</servlet-name>
+    <servlet-class>com.jke.server.UserResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminResource</servlet-name>
+    <servlet-class>com.jke.server.AdminResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrganizationsResource</servlet-name>
+    <servlet-class>com.jke.server.OrganizationsResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TransactionsResource</servlet-name>
+    <servlet-class>com.jke.server.TransactionsResource</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StockQuoteResource</servlet-name>
+    <servlet-class>com.jke.server.StockQuoteResource</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserResource</servlet-name>
+    <url-pattern>/user/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminResource</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrganizationsResource</servlet-name>
+    <url-pattern>/organizations/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TransactionsResource</servlet-name>
+    <url-pattern>/transactions/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StockQuoteResource</servlet-name>
+    <url-pattern>/quote/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>
